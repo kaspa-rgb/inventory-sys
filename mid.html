@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/mid.css">
+    <script src="mid.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div id="loginForm">
+            <h2>Login</h2>
+            <form id="login">
+                <input type="text" id="loginUsername" placeholder="Username" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p class="toggle" onclick="toggleForm('signup')">Don't have an account? Sign up</p>
+        </div>
+
+        <div id="signupForm" style="display: none;">
+            <h2>Sign Up</h2>
+            <form id="signup">
+                <input type="text" id="signupUsername" placeholder="Username" required>
+                <input type="email" id="signupEmail" placeholder="Email" required>
+                <input type="password" id="signupPassword" placeholder="Password" required>
+                <input type="password" id="signupConfirmPassword" placeholder="Confirm Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p class="toggle" onclick="toggleForm('login')">Already have an account? Log in</p>
+        </div>
+
+        <p id="message" class="error"></p>
+    </div>
+
+    
+</body>
+</html>
